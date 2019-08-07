@@ -11,6 +11,10 @@
 		E898F8D422FB37250056BED5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E898F8D222FB37250056BED5 /* Main.storyboard */; };
 		E898F8D622FB37280056BED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E898F8D522FB37280056BED5 /* Assets.xcassets */; };
 		E898F8D922FB37280056BED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E898F8D722FB37280056BED5 /* LaunchScreen.storyboard */; };
+		E898F8E622FB38920056BED5 /* Playlist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E898F8E422FB38920056BED5 /* Playlist.xcdatamodeld */; };
+		E898F8E822FB3BD80056BED5 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E898F8E722FB3BD80056BED5 /* CoreDataStack.swift */; };
+		E898F8EA22FB3F2B0056BED5 /* Playlist+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E898F8E922FB3F2B0056BED5 /* Playlist+Convenience.swift */; };
+		E898F8EC22FB40B50056BED5 /* Song+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = E898F8EB22FB40B50056BED5 /* Song+Convenience.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		E898F8D522FB37280056BED5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E898F8D822FB37280056BED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E898F8DA22FB37280056BED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E898F8E522FB38920056BED5 /* Playlist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Playlist.xcdatamodel; sourceTree = "<group>"; };
+		E898F8E722FB3BD80056BED5 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		E898F8E922FB3F2B0056BED5 /* Playlist+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Playlist+Convenience.swift"; sourceTree = "<group>"; };
+		E898F8EB22FB40B50056BED5 /* Song+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Song+Convenience.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,7 @@
 			children = (
 				E898F8CD22FB37250056BED5 /* PlaylistCoreData_Example */,
 				E898F8CC22FB37250056BED5 /* Products */,
+				E898F8E722FB3BD80056BED5 /* CoreDataStack.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +73,9 @@
 		E898F8E022FB372E0056BED5 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				E898F8EB22FB40B50056BED5 /* Song+Convenience.swift */,
+				E898F8E922FB3F2B0056BED5 /* Playlist+Convenience.swift */,
+				E898F8E422FB38920056BED5 /* Playlist.xcdatamodeld */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -164,7 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E898F8E822FB3BD80056BED5 /* CoreDataStack.swift in Sources */,
+				E898F8EC22FB40B50056BED5 /* Song+Convenience.swift in Sources */,
 				E898F8CF22FB37250056BED5 /* AppDelegate.swift in Sources */,
+				E898F8E622FB38920056BED5 /* Playlist.xcdatamodeld in Sources */,
+				E898F8EA22FB3F2B0056BED5 /* Playlist+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +380,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E898F8E422FB38920056BED5 /* Playlist.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E898F8E522FB38920056BED5 /* Playlist.xcdatamodel */,
+			);
+			currentVersion = E898F8E522FB38920056BED5 /* Playlist.xcdatamodel */;
+			path = Playlist.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E898F8C322FB37250056BED5 /* Project object */;
 }
